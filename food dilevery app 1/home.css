@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(248, 232, 19);
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+nav {
+    background-color: red;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.login-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.login-form p {
+    text-align: center;
+}
+
+.login-form p a {
+    color: blue;
+    text-decoration: none;
+}

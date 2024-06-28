@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+<body>
+    <h1>Registration</h1>
+    <div class="registration-form">
+        <form action="/register" method="post" enctype="multipart/form-data">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="restaurant-name">Restaurant Name:</label>
+            <input type="text" id="restaurant-name" name="restaurant-name" required>
+
+            <label for="restaurant-logo">Logo:</label>
+            <input type="file" id="restaurant-logo" name="restaurant-logo">
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

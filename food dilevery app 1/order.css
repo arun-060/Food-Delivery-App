@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.menu-section, .cart-section, .order-updates {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.menu-item, .cart-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-item:last-child, .cart-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.menu-item h3, .cart-item h3 {
+    margin-top: 0;
+}
+
+.menu-item label, .menu-item input, .menu-item button, .cart-item p, .cart-item button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.menu-item input, .menu-item button, .cart-item button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.menu-item button, .cart-item button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-item button:hover, .cart-item button:hover {
+    background-color: #218838;
+}
+
+.cart-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.cart-section button:hover {
+    background-color: #0056b3;
+}
+
+.order-updates p {
+    text-align: center;
+    font-weight: bold;
+}

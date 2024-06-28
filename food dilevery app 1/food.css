@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-photo/cool-motorcycle-studio_23-2150781634.jpg?t=st=1719307919~exp=1719311519~hmac=8f83392a38d63a6932de3968611f254419d0b38d7e1d589dcdbe3981cac4c862&w=996');
+}
+
+h1 {
+    text-align: center;
+    color: rgb(252, 248, 248);
+}
+
+nav {
+    background-color: red;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

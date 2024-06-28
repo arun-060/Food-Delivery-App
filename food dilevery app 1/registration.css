@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://thumbs.dreamstime.com/b/blurred-image-background-hotel-lobby-interior-abstract-retro-filtered-effect-176417558.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    height: 100vh;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: black; /* Changed title color to black */
+    margin-top: 20px;
+}
+
+.registration-form {
+    width: 300px; /* Reduced size */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow */
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.registration-form input,
+.registration-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: none; /* Removed outline */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.registration-form button:hover {
+    background-color: darkgreen;
+}

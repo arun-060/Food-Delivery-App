@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notifications</title>
+    <link rel="stylesheet" type="text/css" href="notification.css">
+</head>
+<body>
+    <h1>Notifications</h1>
+    
+    <div class="notification-section">
+        <h2>Order Status Updates</h2>
+        <div class="notification" id="order-status">
+            <p>No order status updates available.</p>
+        </div>
+    </div>
+
+    <div class="notification-section">
+        <h2>Promotional Offers and Discounts</h2>
+        <div class="notification" id="promotions">
+            <p>No promotional offers or discounts available.</p>
+        </div>
+    </div>
+
+    <div class="notification-section">
+        <h2>New Restaurants or Menu Items</h2>
+        <div class="notification" id="new-items">
+            <p>No new restaurants or menu items available.</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to update notifications
+        function updateNotification(id, message) {
+            const notificationDiv = document.getElementById(id);
+            notificationDiv.innerHTML = <p>${message}</p>;
+        }
+
+        // Example updates (these would come from your backend in a real app)
+        setTimeout(() => {
+            updateNotification('order-status', 'Your order is being prepared.');
+        }, 3000);
+
+        setTimeout(() => {
+            updateNotification('order-status', 'Your order is out for delivery.');
+        }, 6000);
+
+        setTimeout(() => {
+            updateNotification('order-status', 'Your order has been delivered.');
+        }, 9000);
+
+        setTimeout(() => {
+            updateNotification('promotions', 'Get 20% off on your next order with code SAVE20!');
+        }, 12000);
+
+        setTimeout(() => {
+            updateNotification('new-items', 'New restaurant "Pizza Palace" has been added to your location.');
+        }, 15000);
+    </script>
+</body>
+</html>

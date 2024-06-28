@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browse Restaurants</title>
+    <link rel="stylesheet" type="text/css" href="restaurants.css">
+</head>
+<body>
+    <h1>Browse Restaurants</h1>
+    <div class="search-section">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter your location">
+
+        <div class="filters">
+            <h2>Advanced Search Filters</h2>
+            <label for="cuisine">Cuisine:</label>
+            <select id="cuisine" name="cuisine">
+                <option value="all">All</option>
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+                <option value="indian">Indian</option>
+                <option value="mexican">Mexican</option>
+            </select>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating">
+                <option value="all">All</option>
+                <option value="4">4 Stars & above</option>
+                <option value="3">3 Stars & above</option>
+                <option value="2">2 Stars & above</option>
+                <option value="1">1 Star & above</option>
+            </select>
+
+            <label for="delivery-time">Delivery Time:</label>
+            <select id="delivery-time" name="delivery-time">
+                <option value="all">All</option>
+                <option value="30">Within 30 mins</option>
+                <option value="45">Within 45 mins</option>
+                <option value="60">Within 60 mins</option>
+            </select>
+
+            <label for="price-range">Price Range:</label>
+            <select id="price-range" name="price-range">
+                <option value="all">All</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+
+        <button type="button">Search</button>
+    </div>
+
+    <div class="restaurant-profiles">
+        <h2>Restaurant Profiles</h2>
+        <!-- Sample Restaurant Profile -->
+        <div class="restaurant-profile">
+            <h3>Restaurant Name</h3>
+            <img src="sample-restaurant.jpg" alt="Restaurant Photo">
+            <p>Location: Sample Location</p>
+            <p>Cuisine: Sample Cuisine</p>
+            <p>Rating: ★★★★☆</p>
+            <p>Delivery Time: 30 mins</p>
+            <p>Price Range: $$</p>
+            <h4>Menu</h4>
+            <ul>
+                <li>Dish 1 - $10</li>
+                <li>Dish 2 - $12</li>
+                <li>Dish 3 - $8</li>
+            </ul>
+            <h4>Reviews</h4>
+            <p>Review 1: Great food!</p>
+            <p>Review 2: Quick delivery.</p>
+        </div>
+    </div>
+</body>
+</html>

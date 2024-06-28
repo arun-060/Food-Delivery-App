@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Menu</title>
+    <link rel="stylesheet" type="text/css" href="order.css">
+</head>
+<body>
+    <h1>Order Menu</h1>
+    <div class="menu-section">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <h3>Item 1</h3>
+            <p>Description of item 1.</p>
+            <p>Price: $10</p>
+            <label for="quantity-1">Quantity:</label>
+            <input type="number" id="quantity-1" name="quantity-1" value="1" min="1">
+            <label for="custom-1">Customizations:</label>
+            <input type="text" id="custom-1" name="custom-1" placeholder="Add any special instructions">
+            <button type="button" onclick="addToCart('Item 1', 10, 'quantity-1', 'custom-1')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <h3>Item 2</h3>
+            <p>Description of item 2.</p>
+            <p>Price: $12</p>
+            <label for="quantity-2">Quantity:</label>
+            <input type="number" id="quantity-2" name="quantity-2" value="1" min="1">
+            <label for="custom-2">Customizations:</label>
+            <input type="text" id="custom-2" name="custom-2" placeholder="Add any special instructions">
+            <button type="button" onclick="addToCart('Item 2', 12, 'quantity-2', 'custom-2')">Add to Cart</button>
+        </div>
+        <!-- Add more menu items as needed -->
+    </div>
+
+    <div class="cart-section">
+        <h2>Cart</h2>
+        <div id="cart-items"></div>
+        <button type="button" onclick="checkout()">Checkout</button>
+    </div>
+
+    <div class="order-updates">
+        <h2>Order Updates</h2>
+        <div id="order-status">
+            <p>No updates available.</p>
+        </div>
+    </div>
+
+    <script>
+        function addToCart(itemName, itemPrice, quantityId, customId) {
+            const quantity = document.getElementById(quantityId).value;
+            const customizations = document.getElementById(customId).value;
+            const cartItems = document.getElementById('cart-items');
+            const cartItem = document.createElement('div');
+            cartItem.className = 'cart-item';
+            cartItem.innerHTML = `
+                <p>${itemName} - $${itemPrice}</p>
+                <p>Quantity: ${quantity}</p>
+                <p>Customizations: ${customizations}</p>
+                <button onclick="removeFromCart(this)">Remove</button>
+            `;
+            cartItems.appendChild(cartItem);
+        }
+
+        function removeFromCart(button) {
+            const cartItem = button.parentElement;
+            cartItem.remove();
+        }
+
+        function checkout() {
+            alert('Proceeding to checkout');
+        }
+
+        // Function to simulate real-time order updates
+        function updateOrderStatus(status) {
+            const orderStatus = document.getElementById('order-status');
+            orderStatus.innerHTML = <p>${status}</p>;
+        }
+
+        // Example of updating order status
+        setTimeout(() => {
+            updateOrderStatus('Your order is being prepared.');
+        }, 3000);
+
+        setTimeout(() => {
+            updateOrderStatus('Your order is out for delivery.');
+        }, 6000);
+
+        setTimeout(() => {
+            updateOrderStatus('Your order has been delivered.');
+        }, 9000);
+    </script>
+</body>
+</html>
